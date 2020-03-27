@@ -1,5 +1,6 @@
 (RU)
-Русификация https://github.com/dcm4che/dcm4chee-arc-light version 5.22 вариант nonsecure
+Русификация https://github.com/dcm4che/dcm4chee-arc-light version 5.22 вариант nonsecure. 
+Только эта версия!
 
 1. Без исходников:
 
