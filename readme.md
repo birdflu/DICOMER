@@ -25,8 +25,8 @@
      	
      	`$sudo vi /etc/environment`
      	и добавляем строку:
-     `JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64`
-     `export JAVA_HOME`
+        `JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64`
+        `export JAVA_HOME`
 
      	Auto complete
      	`$sudo vi ~/.bashrc`
@@ -46,30 +46,26 @@
            	`$mvn -v`
 
      6. Git clone и Maven Install
-
-       ```
-       	$git clone https://github.com/dcm4che/dcm4chee-arc-light.git
-       	$cd dcm4che
-       	$mvn install -D db=psql
-       ```
+     
+       	`$git clone https://github.com/dcm4che/dcm4chee-arc-light.git`
+       	`$cd dcm4che`
+       	`$mvn install -D db=psql`
 
      7. Меняем в исходниках:
-         ../dcm4chee-arc-light/dcm4chee-arc-ui2/src/main.ts
-         на https://github.com/birdflu/DICOMER/blob/master/main.ts
-         ../dcm4chee-arc-light/dcm4chee-arc-ui2/src/app/app.component.html
-         на https://github.com/birdflu/DICOMER/blob/master/app.component.html
-         ../dcm4chee-arc-light/dcm4chee-arc-ui2/src/app/study/study-tab.component.ts на https://github.com/birdflu/DICOMER/blob/master/app.component.html
-         ../dcm4chee-arc-light/dcm4chee-arc-ui2/src/app/study/study/study.component.ts на https://github.com/birdflu/DICOMER/blob/master/study.component.ts
+         `../dcm4chee-arc-light/dcm4chee-arc-ui2/src/main.ts`
+         на https://github.com/birdflu/DICOMER/blob/master/main.ts, 
+         `../dcm4chee-arc-light/dcm4chee-arc-ui2/src/app/app.component.html`
+         на https://github.com/birdflu/DICOMER/blob/master/app.component.html, 
+         `../dcm4chee-arc-light/dcm4chee-arc-ui2/src/app/study/study-tab.component.ts` на https://github.com/birdflu/DICOMER/blob/master/app.component.html,
+         `../dcm4chee-arc-light/dcm4chee-arc-ui2/src/app/study/study/study.component.ts` на https://github.com/birdflu/DICOMER/blob/master/study.component.ts
          и добавляем в 
-         ../dcm4chee-arc-light/dcm4chee-arc-ui2/src/assets/locale/ файл с переводом https://github.com/birdflu/DICOMER/blob/master/ru.json
+         `../dcm4chee-arc-light/dcm4chee-arc-ui2/src/assets/locale/` файл с переводом https://github.com/birdflu/DICOMER/blob/master/ru.json
 
      8. После изменения исходников собираем проект:
-
-       ```
+     
        $mvn clean
        $mvn install -D db=psql
-       ```
-
+     
      9. Файл `dcm4chee-arc-ui2-5.22.0-unsecure.war` появится в папке `.m2/repository/org/dcm4che/dcm4chee-arc/dcm4chee-arc-ui2/5.22.0/`. Далее подменяем его как написано выше в пункте 1.3.
 
 wiki: https://github.com/birdflu/DICOMER/wiki
